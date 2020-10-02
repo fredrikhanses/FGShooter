@@ -1,0 +1,93 @@
+All the relevant assets used in this project are found in one of the subdirectories under the main directory “Content/FGShooter”.
+
+The main level I created for this assignment:
+“/Map”
+   FirstPersonMap.umap 
+Triggers in the level are handled by the level Blueprint.
+
+The game rules and conditions are implemented in these Blueprints:
+“/Core”
+   BP_GameMode.uasset
+   BP_GameState.uasset
+   EEndState.uasset
+
+The user interface system is made up of these Blueprints:
+“/Player”
+   FirstPersonHUD.uasset
+“/Core”
+   WBP_Ammo.uasset
+   WBP_EndState.uasset
+   WBP_GrenadeTimer.uasset
+   WBP_Health.uasset
+   WBP_Objective.uasset
+   WBP_Score.uasset
+
+The Player is made up of theses Blueprints:
+“/Player”
+   FirstPersonCharacter.uasset
+   FirstPersonProjectile.uasset
+   FirstPersonSecondaryProjectile.uasset
+
+Enemies are made up of these Blueprints:
+“/Enemies”
+   BP_Enemy_Boss.uasset
+   BP_Enemy_Grunt.uasset
+   BP_Enemy_Heavy.uasset
+   BP_Enemy_Sniper.uasset
+   BP_EnemyBase.uasset
+   BP_SniperProjectile.uasset
+
+The artificial intelligence for the enemies are made up of these Blueprints:
+“/Enemies”
+   BB_Enemy.uasset
+   BP_EnemyAIController.uasset
+   BP_EnemySniperAiController.uasset
+   BT_Enemy.uasset
+   BT_EnemySniper.uasset
+   BTService_FindPlayer.uasset
+   BTTask_Attack.uasset
+   BTTask_ChasePlayer.uasset
+   BTTask_Die.uasset
+   BTTask_FindRandomLocationInRange.uasset
+   BTTask_Shoot.uasset
+
+The spawn system for enemies is made up of these Blueprints:
+“/Core”
+   BPF_Utilities.uasset
+   BPI_Spawnable.uasset
+“/Enemies”
+   BP_SpawnManager.uasset
+   BP_Spawner.uasset
+   DA_EnemyGroup_01.uasset
+   DA_EnemyGroup_02.uasset
+   DA_EnemyGroup_03.uasset
+   FSpawnData.uasset
+   FSpawnGroup.uasset
+   SpawnGroupDataTemplate.uasset
+
+The interaction system is made up of this Blueprint:
+“/Core”
+   BPI_Interactable.uasset
+
+Interactable Blueprints are:
+“/Objects”
+   BP_Door.uasset
+   BP_Keystone.uasset
+   BP_LootableKey.uasset
+
+Blueprints that react to the player are:
+“/Objects”
+   BP_AmmoPickup.uasset
+   BP_BlinkingLaserWall.uasset
+   BP_CubWithMine.uasset
+   BP_DeathFloor.uasset
+   BP_HealthPickup.uasset
+   BP_LandMine.uasset
+   BP_Laser.uasset
+   BP_LaserWall.uasset
+   BP_PlatformButton.uasset
+   BP_ScorePickup.uasset
+
+Another interesting Blueprint is:
+“/Objects”
+   BP_MovingPlatformLong.uasset
